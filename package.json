@@ -1,0 +1,17 @@
+{
+  "name": "rss-reader",
+  "version": "1.0.0",
+  "description": "RSS-READER",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "rss-parser": "^3.5.3"
+  }
+}
