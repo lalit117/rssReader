@@ -19,9 +19,10 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
    var url = req.body.rssUrl;
+   //"http://newsimg.bbc.co.uk/shared/bsp/xsl/rss/img/news_logo.gif"
    rssParser(url)
    .then((feed)=>{
-    res.render('feed.pug', {title:feed.title, items:feed.items});
+    res.render('feed.pug', {title:feed.title, items:feed.items, url:feed.image.url});
    })
    .catch((err)=>{
      res.status(400).send('Failed to fetch feed');

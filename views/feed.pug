@@ -8,7 +8,6 @@ html
       }
       div {
         padding: 5px;
-        line-height: 0.4;
       }
       p{
         position:relative;
@@ -26,7 +25,7 @@ html
       }
   body
   div(style="margin-bottom:20px")
-    img(src="http://newsimg.bbc.co.uk/shared/bsp/xsl/rss/img/news_logo.gif")
+    img(src=url)
   each item in items
     div
         a(href=item.link) #{item.title} 
